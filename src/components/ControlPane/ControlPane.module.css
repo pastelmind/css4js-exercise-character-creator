@@ -24,3 +24,15 @@
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
 }
+
+/* Phones */
+@media (max-width: 550px) {
+  .controlPane {
+    display: inline-block;
+    max-width: 320px;
+  }
+
+  .controlPane:nth-child(n + 2) {
+    margin-left: 16px;
+  }
+}

@@ -5,6 +5,10 @@
 
 .maxWidthWrapper {
   position: relative;
+  /*
+    Fix a glitch that causes an extra horizontal scrollbar only in Chrome
+   */
+  overflow-x: clip;
 }
 
 .header {
@@ -44,4 +48,13 @@
 
 .controlColumn {
   width: 50%;
+}
+
+/* Phones */
+@media (max-width: 550px) {
+  .controlColumn {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
 }
